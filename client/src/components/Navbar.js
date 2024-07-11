@@ -5,7 +5,7 @@ export default function Navbar() {
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-success">
         <div className="container-fluid">
-          <Link className="navbar-brand fs-1 fst-italic fw-bold" to="3" >
+          <Link className="navbar-brand fs-1 fst-italic fw-bold" to="/" >
             <p style={{fontSize:'3rem'}}>FoodDel</p>
           </Link>
           <button
@@ -22,13 +22,18 @@ export default function Navbar() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="#"style={{fontSize:'1.5rem'}}>
+                <Link className="nav-link active" aria-current="page" to="/"style={{fontSize:'1.5rem'}}>
                   Home
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/login" style={{fontSize:'1.5rem'}}>
                   Login
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/signup" style={{fontSize:'1.5rem'}}>
+                  Signup
                 </Link>
               </li>
             </ul>
